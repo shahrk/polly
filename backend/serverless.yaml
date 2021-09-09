@@ -1,5 +1,9 @@
 org: hettest
 app: seproject
+
+custom:
+  serverless-offline:
+    host: 0.0.0.0
 service:
   name: backend
 frameworkVersion: '2'
@@ -73,6 +77,18 @@ functions:
               - Content-Type
               - AUTH_TOKEN
     name: backend-prod-enterRoom
+  fetchQuestionData:
+    handler: src/fetchQuestionData.handler
+    events:
+      - http:
+          path: /fetch-question-data
+          method: POST
+          cors:
+            origin: ${env:ALLOWED_ORIGIN}
+            headers:
+              - Content-Type
+              - AUTH_TOKEN
+    name: backend-prod-fetchQuestionData
   voteMCQQuestion:
     handler: src/voteMCQQuestion.handler
     events:
