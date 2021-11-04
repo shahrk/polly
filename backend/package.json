@@ -9,6 +9,7 @@
     "@middy/http-error-handler": "^2.5.1",
     "@middy/http-json-body-parser": "^2.5.1",
     "@prisma/client": "^3.1.1",
+    "es-abstract": "^1.19.1",
     "http-errors": "^1.8.0",
     "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1"
