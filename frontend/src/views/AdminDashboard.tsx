@@ -40,14 +40,14 @@ export default function AdminDashboard({ history }: RouteComponentProps) {
   },[]);
 
   const barCharts = analytics ? Object.values(analytics).map((options) => {
-    const mapped = options.map((option) => {
+    const mapped = options.map((option) => {  
       return {
         text: option.description,
         value: option.count,
       }
-    })
+    }) 
     console.log(mapped.map((c) => c.text), mapped.map((c) => c.value));
-
+    
     return <div>
       <Bar
         data={{
@@ -77,10 +77,10 @@ export default function AdminDashboard({ history }: RouteComponentProps) {
         }}
       />
     </div>
-  }) : <></>;
+  }): <></>;
 
   console.log(barCharts);
-
+  
 
   return (
     <>

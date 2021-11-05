@@ -7,16 +7,17 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) 
 </div>
 
-![GitHub top language](https://img.shields.io/github/languages/top/shahrk/polly)
-![GitHub contributors](https://img.shields.io/github/contributors/shahrk/polly)
-![GitHub language count](https://img.shields.io/github/languages/count/shahrk/polly)
-![GitHub](https://img.shields.io/github/license/shahrk/polly)
-![GitHub last commit](https://img.shields.io/github/last-commit/shahrk/polly)
+![GitHub top language](https://img.shields.io/github/languages/top/Hetthakkar/polly)
+![GitHub contributors](https://img.shields.io/github/contributors/Hetthakkar/polly)
+![GitHub language count](https://img.shields.io/github/languages/count/Hetthakkar/polly)
+![GitHub](https://img.shields.io/github/license/Hetthakkar/polly)
+![GitHub last commit](https://img.shields.io/github/last-commit/Hetthakkar/polly)
+![Lines of code](https://img.shields.io/tokei/lines/github/Hetthakkar/polly)
 [![build](https://github.com/hetthakkar/polly/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/hetthakkar/polly/actions/workflows/build.yml)
 [![DOI](https://zenodo.org/badge/403373361.svg)](https://zenodo.org/badge/latestdoi/403373361)
-[![Docker](https://img.shields.io/badge/Containerized-Docker-blue)](https://docs.docker.com/compose/)
-[![Coverage Status](https://img.shields.io/badge/coverage-91%25-brightgreen)](https://coveralls.io/github/shahrk/polly?branch=main)
-![lines of code](https://tokei.rs/b1/github/shahrk/polly?color=ff69b4&label=Lines%20of%20Code&style=flat-square)
+
+
+
 </div>
 
 <h1> 📹 Project Video </h1>
@@ -29,20 +30,14 @@ Poll Me is an app open for all and developed as part of the CSC 510 Software Eng
 
 <h1> 🚅 Demo </h1>
 
-1. The **Home** Page 🎯
+<img src="https://github.com/hetthakkar/polly/blob/main/images/Enter.png" width="400"/>
 
-    Description: It is the home page for our webapp, It contains the "create room" icon and other information:
+<img src="https://github.com/hetthakkar/polly/blob/main/images/Personal%20room.png" width="400"/>
 
+<img src="https://github.com/hetthakkar/polly/blob/main/images/Create%20question.png" width="400"/>
 
-<img src="https://github.com/shahrk/polly/blob/main/images/home_page.png" width="1000"/>
+<img src="https://github.com/hetthakkar/polly/blob/main/images/Answer%20question.png" width="400"/>
 
-
-2. The **Create Room** Page 🎯
-
-    Description: User can create a room for conducting the polls:
-
-
-<img src="https://github.com/shahrk/polly/blob/main/images/create_room.png" width="1000"/>
 
 <h1> 📐 Architecture </h1>
 

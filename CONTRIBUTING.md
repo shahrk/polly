@@ -20,11 +20,11 @@ certain guidelines and instructions to follow while making your contribution.
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/shahrk/polly/blob/main/CODE_OF_CONDUCT.md). By participating and working with this repository, you are expected to sustain this code. If you witness any unacceptable behavior, please report it to lorenz.scheller@gmail.com.
+This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/hetthakkar/polly/blob/main/CODE_OF_CONDUCT.md). By participating and working with this repository, you are expected to sustain this code. If you witness any unacceptable behavior, please report it to lorenz.scheller@gmail.com.
 
 ## Found a Bug?
 
-Help us by submitting an issue to our [GitHub Repository](https://github.com/shahrk/polly). Use github issues for reporting bugs and make sure your post follows details:
+Help us by submitting an issue to our [GitHub Repository](https://github.com/hetthakkar/polly). Use github issues for reporting bugs and make sure your post follows details:
 - Present a [minimal, reproducible example](https://stackoverflow.com/help/minimal-reproducible-example) of your issue and remove any unnecessary details
 - Make sure to use the latest release of the library to avoid reporting bugs that were fixed in later releases
 - Optionally, add your device configuration information
@@ -41,15 +41,23 @@ For adding new pages, fork the repository, create a branch and submit it as a PR
 
 Make sure you have 
 
-i) Docker installed.
-ii) Visual studio code for development.
+Follow these steps to get polly setup on your local machine
+- Fork the polly repository to your own Github account 
+- Clone the repository
 
-That's it. Having docker is the only requirement. All that is needed to get started and running the application code is docker-compose up.
-
+        $ git clone https://github.com/Neelkanth7/TUSK
+        $ cd TUSK
+- Add your fork as remote to push your work to
+- Create a virtual environment and install the required dependencies
+- Install the polly package by running
+  ```
+      pip install .
+  ```
+- Run tests using the following command
+  ```
+      pytest
+  ```
 - When ready to submit, raise a pull request and describe the feature/bug fix thoroughly in the description. Also add a link to the issue if relevant
-
-
-
 
 ### Commit guide
 
@@ -64,18 +72,3 @@ In general, the messages must follow the following syntax
     [optional body]
 
     [optional footer(s)]
-
-
-### PR Raising guide
-
-All PR raised must follow the following pattern:
-
-i) Ensure that there is atleast an issue created for the code you are pushing.
-ii) Raise a new Issue on the Github if the issue doesn't exist.
-ii) Start working on the code for the same.
-iii) List the issues fixes in the PR description. Following is an example :- https://github.com/shahrk/polly/pull/28
-
-
-### Frontend coding standards
-
-We extensively follow the following for frontend code :- http://www.w3big.com/bootstrap/bootstrap-css-codeguide-html.html

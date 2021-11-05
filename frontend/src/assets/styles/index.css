@@ -46,6 +46,7 @@
   }
 }
 
+
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Business Frontpage v5.0.7 (https://startbootstrap.com/template/business-frontpage)
@@ -5002,7 +5003,6 @@ textarea.form-control-lg {
   background-color: #d1e7dd;
   border-color: #badbcc;
 }
-
 .alert-success .alert-link {
   color: #0c4128;
 }
