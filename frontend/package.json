@@ -12,7 +12,7 @@
     "@types/node": "^16.10.1",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
-    "autoprefixer": "10.2.5",
+    "autoprefixer": "10.3.7",
     "axios": "^0.21.4",
     "chart.js": "^3.0.0",
     "gulp": "4.0.2",
