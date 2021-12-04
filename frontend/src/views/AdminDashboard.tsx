@@ -74,9 +74,6 @@ export default function AdminDashboard({ history }: RouteComponentProps) {
             }
           ]
         }}
-        // options={{
-        //   indexAxis: 'y'
-        // }}
       />
     </div>
   }) : <></>;
