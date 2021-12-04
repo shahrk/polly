@@ -5,7 +5,9 @@ import '../assets/styles/createRoom.css'
 import createNewRoom from '../util/createNewRoom'
 import { RouteComponentProps } from 'react-router'
 import { fetchRoomAnalytics } from '../util/fetchRoomAnalytics'
-import { Bar } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
+// import { Bar } from 'react-chartjs-2';
+
 interface IAnalytics {
   [key: string]: {
     id: number;
@@ -39,7 +41,7 @@ export default function AdminDashboard({ history }: RouteComponentProps) {
     })();
   },[]);
 
-  const barCharts = analytics ? Object.values(analytics).map((options) => {
+  const doughnutCharts = analytics ? Object.values(analytics).map((options) => {
     const mapped = options.map((option) => {
       return {
         text: option.description,
@@ -49,7 +51,7 @@ export default function AdminDashboard({ history }: RouteComponentProps) {
     console.log(mapped.map((c) => c.text), mapped.map((c) => c.value));
 
     return <div>
-      <Bar
+      <Doughnut
         data={{
           labels: mapped.map((c) => c.text),
           datasets: [
@@ -62,24 +64,24 @@ export default function AdminDashboard({ history }: RouteComponentProps) {
                 'rgba(255, 205, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
               ],
-              borderColor: [
-                'rgb(255, 99, 132)',
-                'rgb(255, 159, 64)',
-                'rgb(255, 205, 86)',
-                'rgb(75, 192, 192)',
-              ],
-              borderWidth: 1
+              // borderColor: [
+              //   'rgb(255, 99, 132)',
+              //   'rgb(255, 159, 64)',
+              //   'rgb(255, 205, 86)',
+              //   'rgb(75, 192, 192)',
+              // ],
+              // borderWidth: 1
             }
           ]
         }}
-        options={{
-          indexAxis: 'y'
-        }}
+        // options={{
+        //   indexAxis: 'y'
+        // }}
       />
     </div>
   }) : <></>;
 
-  console.log(barCharts);
+  console.log(doughnutCharts);
 
 
   return (
@@ -167,7 +169,7 @@ export default function AdminDashboard({ history }: RouteComponentProps) {
                     <h2 className="mb-0 mr-4 mt-2">Analytics</h2>
                     <div className="row px-3 justify-content-left mt-4 mb-5 border-line">  </div>
                     <div className="row">
-                    {barCharts}
+                    {doughnutCharts}
                     </div>
                 </div>
             </div>
